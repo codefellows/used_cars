@@ -1,0 +1,44 @@
+{% extends "layout.jinja2" %}
+{% block body %}
+<form method="POST">
+    <ul>
+        <li>
+            <label for='make'>Make: </label>
+            <input type="text" name="make" required value='{{ make }}'/>
+        </li>
+        <li>
+            <label for='model'>Model: </label>
+            <input type="text" name="model" required value='{{ model }}'/>
+        </li>
+        <li>
+            <label for='year'>Year: </label>
+            <input type="number" name="year" required value='{{ year }}'/>
+        </li>
+        <li>
+            <label for='price'>Price: </label>
+            <input type="number" name="price" required value='{{ price }}' step='0.01' />
+        </li>
+        <li>
+            <label for='mileage'>Mileage: </label>
+            <input type="number" name="mileage" required value='{{ mileage }}'/>
+        </li>
+        <li>
+            <label for='condition'>Condition: </label>
+            <input type="text" name="condition" required value='{{ condition }}'/>
+        </li>
+        <li>
+            <label for='doors'>Doors: </label>
+            <input type="number" name="doors" required value='{{ doors }}' min='0' max='8' />
+        </li>
+        <li>
+            <label for='color'>Color: </label>
+            <input type="text" name="color" required value='{{ color }}'/>
+        </li>
+        <li>
+            <label for='description'>Description: </label>
+            <textarea name="description">{{description}}</textarea>
+        </li>
+    </ul>
+    <input type="submit" value="Add New Car" />
+</form>
+{% endblock %}

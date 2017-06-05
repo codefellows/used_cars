@@ -1,0 +1,12 @@
+{% extends "layout.jinja2" %}
+{% block body %}
+<ul>
+    <li>Total Sales: {{ total_sales }}</li>
+    <li>Number Sold: {{ number_sold }}</li>
+    <li>
+        Brands Sold: {% for brand in makes_sold %}
+        {{ brand }}, 
+        {% endfor %}
+    </li>
+</ul>
+{% endblock %}

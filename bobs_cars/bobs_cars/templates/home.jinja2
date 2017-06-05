@@ -1,0 +1,24 @@
+{% extends "layout.jinja2" %}
+{% block body %}
+<h1>Cars</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    {% for car in all_cars %}
+    <tr>
+        <td>{{ car.make }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.year }}</td>
+        <td>${{ car.price }}</td>
+        <td><a href="{{ request.route_url('car_info', id=car.vin_num) }}">See The Car!</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}Bob's Cars{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ request.static_url('bobs_cars:static/style_reset.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ request.static_url('bobs_cars:static/style.css') }}">
+</head>
+<body>
+    <a href="{{ request.route_url('home') }}"><button>Home</button></a>
+  {% block body %}{% endblock %}
+</body>
+</html>

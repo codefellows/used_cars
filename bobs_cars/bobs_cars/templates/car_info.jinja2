@@ -1,0 +1,16 @@
+{% extends "layout.jinja2" %}
+{% block body %}
+<ul>
+    <li>Make: {{ car.make }}</li>
+    <li>Model: {{ car.model }}</li>
+    <li>Year: {{ car.year }}</li>
+    <li>Color: {{ car.color }}</li>
+    <li>Doors: {{ car.doors }}</li>
+    <li>Mileage: {{ car.mileage }}</li>
+    <li>Vin Number: {{ car.vin_num }}</li>
+    <li>Condition: {{ car.condition }}</li>
+    <li>In Stock: {{ car.in_stock }}</li>
+    <li>Description: {{ car.description }}</li>
+    <li>Price: {{ "${:,.2f}".format(car.price) }}</li>
+</ul>
+{% endblock %}

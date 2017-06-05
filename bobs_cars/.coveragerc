@@ -1,0 +1,3 @@
+[run]
+source = bobs_cars
+omit = bobs_cars/test*
