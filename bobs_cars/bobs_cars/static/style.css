@@ -1,0 +1,79 @@
+*{
+  font-family: 'Helvetica';
+
+}
+h1{
+  font-size: 3rem;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Copperplate';
+}
+
+button{
+  margin: 5% 1% 1% 80%;
+}
+
+body {
+  background:#fefefe;
+}
+
+table {
+  border-collapse: separate;
+  background:#fff;
+  margin:50px auto;
+  border:1px solid black;
+}
+
+
+thead tr th {
+  font-family: 'Copperplate';
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  background-color: #2d2d2d;
+  padding:20px 20px 20px 20px;
+}
+
+tbody tr td {
+  font-family: 'Helvetica';
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+  
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+form {
+  background-color: #2d2d2d;
+  padding: 2em;
+  margin: auto;
+  max-width: 60%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label {
+  color:white;
+}
+
+.sales {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+li {
+  padding:1%;
+}
