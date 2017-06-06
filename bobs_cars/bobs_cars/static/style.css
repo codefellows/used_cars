@@ -1,4 +1,7 @@
+*{
+  font-family: 'Helvetica';
 
+}
 h1{
   font-size: 3rem;
   width: 50px;
@@ -8,7 +11,7 @@ h1{
 }
 
 button{
-margin: 5% 1% 1% 80%;
+  margin: 5% 1% 1% 80%;
 }
 
 body {
@@ -47,20 +50,30 @@ tbody tr:nth-child(2n) {
 }
 
 form {
-    background-color: #2d2d2d;
-    padding: 2em;
-    margin: auto;
-    max-width: 60%;
+  background-color: #2d2d2d;
+  padding: 2em;
+  margin: auto;
+  max-width: 60%;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 label {
   color:white;
 }
 
+ul {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+li {
+  padding:1%;
+}
