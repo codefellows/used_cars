@@ -17,7 +17,8 @@ requires = [
     'transaction',
     'zope.sqlalchemy',
     'waitress',
-    'psycopg2'
+    'psycopg2',
+    'faker'
 ]
 
 tests_require = [
@@ -54,7 +55,7 @@ setup(
             'main = bobs_cars:main',
         ],
         'console_scripts': [
-            'dbinit = bobs_cars.scripts.initializedb:main',
+            'initdb = bobs_cars.scripts.initializedb:main',
         ],
     },
 )
